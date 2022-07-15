@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Secret</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css";>
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-regular fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+
+                </div>
+                <i class="fa-duotone fa-bars" onclick="hideMenu()"></i>
+            </nav>
+<div class="text-box">
+         <h1>First Time Website</h1>
+              <p>I cant believe that i successfully created this Website<br> by my own using HTML and CSS.</p>
+                   <a href="" class="hero-btn">Visit Us To Know More</a>
+                </div>
+        </section>
+
+
+<script>
+
+     var navLinks = document.getElementById('navLinks');
+     function showMenu(){
+        navLinks.style.right = "0";
+     }
+     function hideMenu(){
+        navLinks.style.right = "-200px";
+     }
+
+</script>
+
+    </body>
+</html>
